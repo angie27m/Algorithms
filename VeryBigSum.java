@@ -7,7 +7,6 @@ import java.util.concurrent.*;
 import java.util.function.*;
 import java.util.regex.*;
 import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
 class Result {
@@ -16,7 +15,6 @@ class Result {
      * Return the sum of all numbers of array
      */
     public static long aVeryBigSum(List<Long> ar) {
-    // Write your code here
         ar.stream().forEach(num -> {
             total += num;
         });
